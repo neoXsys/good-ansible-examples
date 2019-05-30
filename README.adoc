@@ -9,13 +9,13 @@ toc::[]
 Good Ansible is a "good-ansible" version of the repo `bad-ansible` [1] for training
 purposes. You can still make it better :) forked from [2]
 
-[1] https://github.com/tonykay/bad-ansible.git
-[2] https://github.com/prakhar1985/good-ansible.git
+* [1] https://github.com/tonykay/bad-ansible.git
+* [2] https://github.com/prakhar1985/good-ansible.git
 
-Demonstrted/Improved Features From [2]:
-- Lookup plugin usage in inventory host file
-- Ansible Vault Usage
-- Package installation from dynamically included variable file
-- Installation of Database from community provided role
-- Installation & Uninstallation of t3app (3 Tier Application) 
-- Cleanup
+=== Demonstrted/Improved Features From [2]:
+* Lookup plugin usage in inventory host file
+* Ansible Vault Usage
+* Package installation from dynamically included variable file
+* Installation of Database from community provided role
+* Installation & Uninstallation of t3app (3 Tier Application) 
+* Cleanup
