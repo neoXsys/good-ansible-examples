@@ -1,5 +1,5 @@
 ---
-# Revese 3 Tier app deployment
+# Reverse 3 Tier app deployment
 #
 #   Remove all repos
 #   Remove the base 3 tier app packages (haproxy, tomcat etc)
