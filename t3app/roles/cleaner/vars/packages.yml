@@ -1,0 +1,6 @@
+packages:
+  - httpie
+  - python-pip
+  - haproxy
+  - tomcat
+  - postgresql-server

@@ -1,0 +1,33 @@
+---
+# Initial, common, system setup steps
+
+- name: include variable from vars/packages.yml dynamically
+  include_vars:
+    file: vars/packages.yml
+
+- name: reverse the enabling of sudo without tty for some ansible commands
+  replace:
+    path: /etc/sudoers
+    regexp: 'Defaults\s*!requiretty'
+    replace: '^Defaults requiretty'
+    backup: yes
+
+- name: disable repos
+  template:
+    src: /dev/null
+    dest: /etc/yum.repos.d/open_three-tier-app.repo
+
+- name: remove base tools and three tier app packages - "{{ packages }}"
+  yum:
+    name: "{{ packages }}" 
+    state: absent
+
+- name: delete tomcat webapps directory - removing index.html etc
+  file:
+    path: /usr/share/tomcat/webapps
+    state: absent
+
+- name: delete haproxy.cfg from /etc/haproxy
+  file:
+    path: /etc/haproxy/haproxy.cfg
+    state: absent
