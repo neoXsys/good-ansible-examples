@@ -1,18 +1,22 @@
 :toc: macro
 
-= good-ansible
+= Good Ansible Examples 
 
 toc::[]
 
 == Overview
 
-Good Ansible is a "good-ansible" version of the repo `bad-ansible` [1] for training
-purposes. You can still make it better :) forked from [2]
+Good Ansible Examples has `good-ansible` version of `bad-ansible` practices for training perpose. You can do lot more `better-ansible` :). Contribute.
+
+=== Introduced Modification For Three Tier App (t3app):
+
+- Three Tier App - `bad-ansible` repo [1]
+- Three Tier App - `good-ansible` repo [2]
 
 * [1] https://github.com/tonykay/bad-ansible.git
 * [2] https://github.com/prakhar1985/good-ansible.git
 
-=== Introduced new modification from [2]:
+==== CHANGLOG:
 * Lookup plugin usage in inventory host file
 * Ansible Vault Usage
 * Package installation from dynamically included variable file
